@@ -83,6 +83,8 @@
 	- CGI 방식에 비하여 CPU 점유도나 메모리 점유도에 있어서 상당히 효율적
 
 ![App Server](https://i.imgur.com/zCcziFJ.png)
+
+## Web Programming Language
 #### Compile Code Vs Scripting Code
 ||Compile|Scripting|
 |---|---|---|
@@ -90,3 +92,54 @@
 |코드 형태|컴파일된 Binary Code 또는 Byte COde|컴파일되기 전 일반적인 Script Code|
 |컴파일 방법|구현 이후 컴파일 과정을 직접 수행|구현 이후 컴파일 과정은 웹 요청시 자동 수행|
 |코드 변경|직접 다시 재컴파일해야 함|스크립트 내 코드만 수정하면 되며 웹 요청시 자동으로 재컴파일 수행|
+
+#### Client-Side Scripting 기술
+- 요청하는 파일을 그대로 브라우저로 전송하고 그 파일 내에 있는 스크립트 언어를 해석하여 페이지 자체를 동적으로 만들어주는 기술
+- 종류
+	- 자바스크립트 [ JavaScript ]
+	- DHTML [ Dynamic HTML ]
+	- CSS [ Cascading Style Sheet ]
+	- Flash와 관련된 ActionScript
+	- Ajax [ Asynchronous JavaScript and XML ]
+
+#### Server-Side Scripting 기술
+- 웹 서버 내에 코딩해 놓은 파일을 서버 측에서 동작하는 어플리케이션 서버가 직접 실행하여 그 결과를 브라우저로 보내주는 기술
+- ASP [ Active Server Page ]
+	- Microsoft의 대표적 기술
+	- VBScript를 이용해서 매우 쉽게 학습 및 적응 가능
+	- 기존에 이미 개발되어 있는 COM 객체를 활용함으로써 개발자들은 필요한 프로그램을 코딩하는 시간을 줄일 수 있음
+	- .NET platform
+		- ASP.NET
+	- 단점
+		- Microsoft에서 개발한 OS 및 개발 환경에 종속
+		- 값비싼 Microsoft 계열 OS 및 DB와 IDE를 사용
+
+#### PHP [ Profrssional Hypertext Preprocessor ] 전문적인 하이퍼텍스트 전처리기
+- Open Source Model 기반 언어
+- Windows, Unix, Linux OS에서 가장 빠르게 동작하는웹 사이트 구성 가능
+- 소규모 개발자들에게 매우 쉽게 접근
+- 가볍고 사용하기 쉬움
+- 풍부한 DB 지원 기능을 제공
+- 단점
+	- 일반적인 프로그래밍 언어가 가지고 있는 풍부한 기능이 부족
+	- 객체지향[ Object-oriented ] 프로그래밍 언어가 가지고 있는 캡슐화, 상속성, 재사용성, 모듈화 특성이 부족
+	- 중대형급 규모의 웹 어플리케이션 개발에 적합하지 않음
+
+#### JSP [ Java Server Page ]
+- Java 언어 기반의 웹 스크립트 언어
+- Script 기반의 웹 프로그래을 지원
+	- Compile Code 방식인 Java Servlet은 웹 개발자 및 운영에 불편
+- Java의 객체지향 언어의 여러 가지 기능을 사용
+	- Class Libraries, 객체 지향적 코딩, 높은 보안 지원
+- 효율적인 처리
+	- 웹 요청 시 이미 메모리에 적재된 서블릿 코드에서 바로 응답이 가능
+- 코드 유지관리 보수
+	- MVC [ Model-View-Controller ] 모델
+- 많은 Class Libraries 사용 가능
+
+### JSP/Servlet 웹 프로그래밍을 위한 필수 사전 지식
+||Compile Code|Scripting Code|
+|---|---|---|
+|Java|자바 언어 기본, 객체지향, 상속,<br>오버로딩, 오버라이딩,<br>인터페이스 구현, Reflection,<br>java.util, java.io 패키지,<br>쓰레드, 에외 처리 핸들링|Annotation<br>서블릿 기초 프로그래밍<br>request, response 처리<br>GET/POST 처리|
+|JDBC| JDBC 드라이버 세팅, Resulset<br>PreparedStatement, 데이터 핸들링|오라클, MySQL등 원격지 DB 연결 처리 경험|
+|Servlet|서블릿 기초 프로그래밍<br>request, response 처리<br>GET/POST 처리|서블릿 생명주기 이해|
