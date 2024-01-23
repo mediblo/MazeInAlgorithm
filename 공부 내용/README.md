@@ -223,17 +223,17 @@
 - 프로그래머가 HTML, 자바스크립트 스타일시트 등 복잡한 기술을 모두 알아야 할 필요가 없음
 
 ### 서블릿 컨테이너 동작 흐름
-Request Flow
-![Request Flow](https://imgur.com/PD5EZf5.png)
-Response Flow
-![Response Flow](https://imgur.com/tjtmZNx.png)
-Request 1 - HTTP
-![Request HTTP](https://imgur.com/RFktadR.png)
-Request 2 - Servlet
-![Request Servlet 1](https://imgur.com/Dsks1ra.png)
-![Request Servlet 2](https://imgur.com/rs8q0vX.png)
-Request 3 - Servlet
-![Request Servlet 3](https://imgur.com/yJ7NtHn.png)
+Request Flow  
+![Request Flow](https://imgur.com/PD5EZf5.png)  
+Response Flow  
+![Response Flow](https://imgur.com/tjtmZNx.png)  
+Request 1 - HTTP  
+![Request HTTP](https://imgur.com/RFktadR.png)  
+Request 2 - Servlet  
+![Request Servlet 1](https://imgur.com/Dsks1ra.png)  
+![Request Servlet 2](https://imgur.com/rs8q0vX.png)  
+Request 3 - Servlet  
+![Request Servlet 3](https://imgur.com/yJ7NtHn.png)  
 
 #### 서블릿 작성
 - 자바 클래스로 제작
@@ -322,3 +322,5 @@ Request 3 - Servlet
 |setDateHeader(name, date)|문자열 name의 이름으로 date에 설정된 Millisecond<br>시간값을 헤더에 설정|
 |sendError(status, msg)|에러 코드를 세팅하고 메시지를 보냄|
 |sendRedirect(url)|클라이언트 요청을 다른 페이지로 보냄|
+
+사진 및 정보 출처 : [Head First Servlet & JSP] [동국대학교]
