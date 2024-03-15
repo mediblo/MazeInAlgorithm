@@ -15,6 +15,7 @@
 <img src=https://imgur.com/FJPk6gV.png height="300">
 <img src=https://imgur.com/fEgJPjZ.png height="300">
 </p>
+
 ---
 #### 소프트웨어 개발의 어려움
 1. 개집 짓기 = 소규모
