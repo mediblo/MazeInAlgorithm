@@ -11,8 +11,8 @@
 - 소모가 아닌 품질 저하
   - HW : 오래 사용시 부품이 닳고 기능도 떨어짐
   - SW : 닳지 않으며 시간이 지나도 고장 빈도가 높지 않음 [ 사용 시작 단계부터 사용자의 요구가 계속 발생 ]  
-![HW 설명](https://imgur.com/FJPk6gV.png)
-![SW 설명](https://imgur.com/fEgJPjZ.png)
+<img src=https://imgur.com/FJPk6gV.png height="300">
+<img src=https://imgur.com/fEgJPjZ.png height="300">
 ---
 #### 소프트웨어 개발의 어려움
 1. 개집 짓기 = 소규모
