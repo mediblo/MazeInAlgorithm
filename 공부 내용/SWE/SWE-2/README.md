@@ -72,9 +72,9 @@ UML의 역할
 	- UC의 수행 결과를 액터에게 알려줄 때는 UC에서 액터로 방향성을 갖는 실선으로 표현
 	- UC -> 액터 관계에서 주의할 사항은 통보 기능이 시스템 내에서 이루어져야 함
 	- UCD에서 화살표로 나타냈다면 그 기능을 개발에 포함해야 함  
-    <img src = https://imgur.com/Y5K31BP.png height = "250">
+    <img src = https://imgur.com/Y5K31BP.png height = "250">  
 	- 유스케이스 -> 시스템 액터 관계  
-    <img src = https://imgur.com/S5QDVEc.png>
+    <img src = https://imgur.com/S5QDVEc.png>  
 	- 액터의 일반화 관계 
 		- 일반화 : 개별적인 것에서 공통적인 특징을 뽑아 이름을 붙인 것 [ 반대 개념 : 특수화 ]
 		- 일반화 개념은 액터 사이에 먼저 적용할 수 있음
