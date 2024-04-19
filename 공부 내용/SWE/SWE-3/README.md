@@ -4,7 +4,7 @@
 		    color: red;
 		    font-weight: bold;
 		}
-</style>
+	</style>
 </head>
 
 # 3 계획 [ Planning ]
