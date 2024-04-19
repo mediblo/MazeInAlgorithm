@@ -1,10 +1,3 @@
-<style>
-	.impotant {
-		color: red;
-		font-weight: bold;
-	}
-</style>
-
 # 3 계획 [ Planning ]
 ### 3.1 계획의 이해
 - 계획의 역할
