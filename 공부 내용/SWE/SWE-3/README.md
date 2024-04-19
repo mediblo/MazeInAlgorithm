@@ -119,7 +119,7 @@
 	- I 단점
 		- 개발 초기에 LOC 추정이 어려움, 옛 방식, 프로젝트 진행 정도에 따른 3단계 산정 모델 제안
 	- 애플리케이션 합성 모델
-		- 1단계에서는 <span class = "impotant">입출력 화면 중심의 사용자 인터페이스 개수</span>등을 계산해 아래와 같이<span class = "impotant">객체 점수</span>를 산출  
+		- 1단계에서는 <span style="color:red; font-weight:bold;">입출력 화면 중심의 사용자 인터페이스 개수</span>등을 계산해 아래와 같이<span style="color:red; font-weight:bold;">객체 점수</span>를 산출  
 		&rarr; 기능점수법과 유사하나 데이터 점수 반영하지 않음
 		- 개발 범위에 속한 객체[입출력 화면 등]를 찾음
 		- 객체가 제공하는 기능의 복잡도를 3가지[단순, 보통, 복잡]로 분류
@@ -127,10 +127,10 @@
 	- 초기 설계 모델
 		- 2단계는 초기 설계 단계에서 예측 값을 구함
 		- 초기 설계 단계쯤 되면 1단계보다는 시스템의 구조와 기능을 좀 더 상세히 알 수 있어 1단계보다 더욱 정확한 예측이 가능
-		- 다음에 소개되는 <span class = "impotant">기능점수</span> 방법을 사용하여 기능 점수를 구함
+		- 다음에 소개되는 <span style="color:red; font-weight:bold;">기능점수</span> 방법을 사용하여 기능 점수를 구함
 	- 구조  설계 이후 모델
 		- 3단계에서는 이미 기능 점수가 나왔기 때문에 노력을 추정하는 게 어렵지 않음
-		- <span class = "impotant">기능 점수를 바탕으로 한 LOC를 추정</span>해 SW 규모를 산정
+		- <span style="color:red; font-weight:bold;">기능 점수를 바탕으로 한 LOC를 추정</span>해 SW 규모를 산정
 		- COCOMO II에 적용되는 기본 공식
 			- $E = b * S^c * 4(X)$
 			- $b * S^c$ : 기초 소요 노력 예측값
@@ -261,13 +261,15 @@
 		- 보정 후 개발 원가 = 보정 전 개발 원가 * ( 규모 보정 계수 * 연계 복잡성 수준 보정 계수 * 성능요구 수준 보정 계수 * 운영 환경 호환성 보정 계수 * 보안성 수준 보정 계수 )
 		- 5가지 보정 계수의 값을 구했다면 이 값을 적용해 보정한 후 개발 원가를 계산할 수 있음
 
-<img src = https://imgur.com/e1GLWhx.png height = 250>
-<img src = https://imgur.com/d0XCTHV.png height = 250>
+<img src = https://imgur.com/e1GLWhx.png width = 600><br>
+<img src = https://imgur.com/d0XCTHV.png width = 600>
 
 ---
 ### 3.8 일정 계획
 - 일정 계획이란?
-	- SW를 개발하기 위해 어떤 작업이 필요한지 찾은 후, 이를 진행할 순서를 결정하거나 주어진 개발 기간에 소작업의 개발 기간 및 그들 간의 순서, 필요한 자원 등과 같은 일정을 계획하는 것 [ 표 3- 17 ]
+	- SW를 개발하기 위해 어떤 작업이 필요한지 찾은 후, 이를 진행할 순서를 결정하거나 주어진 개발 기간에 소작업의 개발 기간 및 그들 간의 순서, 필요한 자원 등과 같은 일정을 계획하는 것
+
+<img src = https://imgur.com/r9DeOC5.png>
 
 - 일정 계획의 시작 : 작업 분할 구조도[WBS]
 	- WBS
@@ -279,7 +281,9 @@
 		- 프로젝트 팀원의 책임과 역할이 분명
 		- 필요 인력과 일정 게획을 세우는 데 기초로 활용
 		- 개발비 산정 시 기초로 활용
-		- 성과 측정 및 조정 시 기준선으로 활용할 수 있음 [ 그림 3-12 ]
+		- 성과 측정 및 조정 시 기준선으로 활용할 수 있음
+
+<img src = https://imgur.com/N7QVxax.png>
 
 - 일정 계획 기법 1 : 네트워크 차트
 	- 네트워크 차트 [ PERT/CPM ]
@@ -305,32 +309,70 @@
 			- ES : 가능한 빨리 시작할 수 있는 시간으로, 선행 작업이 완료되었을 때 해당 작업을 시작할 수 있는 가장 빠른 시점
 			- ES 값을 구할 때는 맨 앞[작업 A]에서 끝 방향으로 가며 계산
 			- ES에서 주의할 부분은 두 작업이 합류하는 지점의 작업 시작 시간은 두 작업이 모두 완전히 끝났을 때
-			- <span class = "impotant">ES max{EFp}, EFp 는 전단계의 EF 값들의 집합</span>
+			- <span style="color:red; font-weight:bold;">ES max{EFp}, EFp 는 전단계의 EF 값들의 집합</span>
 		3. EF 값을 구함 [ Earliest Finish Time ]
 			- EF : 가장 빠른 시작 시간[ES]으로 시작했을 때의 가장 빠른 완료 시간
-			- <span class = "impotant">EF = ES + 작업 소요 시간[WT]</span>
-		4. LF 값을 <span class = "impotant">먼저</span> 구함
+			- <span style="color:red; font-weight:bold;">EF = ES + 작업 소요 시간[WT]</span>
+		4. LF 값을 <span style="color:red; font-weight:bold;">먼저</span> 구함
 			- LF : 가장 늦게 시작할 수 있는 시간[LF]에 시작 해 작업을 완료한 시간
 			- 두 지점으로 갈라지는 곳에서는 다음 작업의 시작 시간에 영향을 주지 않고 시작할 수 있는 시간을 찾아 기입
 			- 맨 뒤[M]에서 앞[A] 방향으로 계산
 			- 마지막 작업의 LS = ES, LF = EF로 초기화
 		5. LS 값을 구함
 			- LS : 어떤 작업을 늦어도 시작해야 하는 시간, 즉 가장 늦게 시작할 수 있는 시간
-			- <span class = "impotant">LS =LF - WT</span>
+			- <span style="color:red; font-weight:bold;">LS =LF - WT</span>
 		6. ST 값을 구함 - 여유 시간 [ Slack Time ]
 			- ST : 여유 시간, 각 작업에서 '가장 늦게 시작하는 시간'에서 '가장 빨리 시작하는 시간'을 빼면 구할 수 있음
 			- 전체 작업 시간을 줄이고 싶을 때는 여유 시간이 존재하는 작업의 시간을 줄이면 됨
-			- <span class = "impotant">ST = LF - EF = LS - ES</span>
+			- <span style="color:red; font-weight:bold;">ST = LF - EF = LS - ES</span>
 		7. 임계 경로를 구함
-			- 임계 경로 : 여유 시간이 없는 경로, <span class = "impotant">ST = 0 인 경로.</span>
+			- 임계 경로 : 여유 시간이 없는 경로, <span style="color:red; font-weight:bold;">ST = 0 인 경로.</span>
 			- 임계 경로에는 여유 시간이 없으므로 모든 일정 계획은 임계 경로에 좌우됨
 			- 임계 경로에서 벗어난 활동을 수행하는 걸리는 시간이 한도 내에서 늦춰지거나 당겨 질 경우에는 전체 프로젝트 완료 시간에 변화가 없음
+
+|작업|작업 설명|선행 작업|소요 기간[주]|
+|:---:|:---:|:---:|:---:|
+|A|개인 정보 CURD 프로그램 개발|-|2|
+|B|학적 변동 CURD 프로그램 개발|A|6|
+|C|휴복학 및 자퇴 CURD 프로그램 개발|A|4|
+|D|교과 과정 CURD 프로그램 개발|B, C|2|
+|E|유사/동일 과목 CURD 프로그램 개발|D|4|
+|F|개설 강좌 CURD 프로그램 개발|D|3|
+|G|수강 과목 CURD 프로그램 개발|E|2|
+|H|시간표 CURD 프로그램 개발|E|4|
+|I|성적 CURD 프로그램 개발|F|2|
+|J|장학생 CURD 프로그램 개발|F|1|
+|K|등록금 CURD 프로그램 개발|G, H|2|
+|L|졸업 사정 CURD 프로그램 개발|I, K|2|
+|M|사회봉사 실적 CURD 프로그램 개발|J, L|3|
+
+<table>
+  <tr>
+    <td>WT</td>
+  </tr>
+  <tr>
+    <td>ES</td>
+    <td>EF</td>
+  </tr>
+  <tr>
+	<td>LS</td>
+	<td>LF</td>
+  </tr>
+  <tr>
+    <td>ST</td>
+  </tr>
+</table>
+
+<img src = https://imgur.com/XM9DFyW.png>
+<img src = https://imgur.com/8vkljg6.png>
 
 - 일정 계획 기법 2 : 간트 차트를 이용한 일정표 작성
 	- 간트 차트
 		- 프로젝트 일정 관리를 위한 바 형태의 도구
 		- 프로젝트의 주요 활동을 파악한 후, 각 활동의 일정을 시작하는 시점과 끝나는 시점을 연결한 막대 모양으로 표시
-		- 전체 일정을 한눈에 볼 수 있음 [ 그림 3 - 15 ]
+		- 전체 일정을 한눈에 볼 수 있음
+
+<img src = https://imgur.com/ypxReRr.png>
 
 ---
 ### 3.9 위험 분석
@@ -343,12 +385,13 @@
 	- 위험 관리
 		- sw 개발에 방해가 되는 요소를 파악 [ 위험 요소 식별 ]
 		- 위험 요소의 발생 확률과 영향도를 평가 [ 위험 분석 ]
-		- 분석한 결과에 따라 위험 우선순위를 정해 그에 맞게 대책을 설립 [ 그림 3-19 ]
+		- 분석한 결과에 따라 위험 우선순위를 정해 그에 맞게 대책을 설립
+		- <img src = https://imgur.com/ZZvxYwH.png>
 		- 위험 요소 식별
 			- 발생 가능한 위험 요소에 대해 브레인스토밍해서 도출하는 방법
 			- 이전에 유사한 프로젝트를 진행했을 때 발생한 위험 요소를 참조하는 방법
 			- 대표적인 위험요소로는 개발자들의 이직, 요구사항의 변경 등
-			- 표 3-24
+			-  <img src = https://imgur.com/orJOOTl.png>
 		- 위험 분석
 			- 위험 발생 가능성의 척도
 				- 매우 낮음[<10%], 낮음[10-25%], 보통[25-50%], 높음[50-75%], 매우 높음[>75%] 등급으로 분류
