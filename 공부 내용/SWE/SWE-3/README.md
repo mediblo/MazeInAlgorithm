@@ -1,11 +1,9 @@
-<head>
-	<style>
-		.impotant {
-		    color: red;
-		    font-weight: bold;
-		}
-	</style>
-</head>
+<style>
+	.impotant {
+		color: red;
+		font-weight: bold;
+	}
+</style>
 
 # 3 계획 [ Planning ]
 ### 3.1 계획의 이해
@@ -157,9 +155,9 @@
 		- SW 개발 생명주기의 전체 단계에서 사용 가능
 	- 구분
 		- 기능 점수의 기준이 되는 SW 기능은 크게 데이터 기능과 트랜잭션으로 구분
-		- <src img = https://imgur.com/AmXgMwA.png>
+		- <img src = https://imgur.com/AmXgMwA.png>
 		- SW 사업 대가산정 가이드에서 제시하는 구분법
-		- <src img = https://imgur.com/p07UgVg.png>
+		- <img src = https://imgur.com/p07UgVg.png>
 	- 장점
 		- 사용자의 요구사항만으로 기능을 추출해 측정
 		- 객관적인 요구사항만으로 측정
@@ -173,7 +171,7 @@
 - 간이 기능 점수법을 이용한 기능 점수 산정 방법
 	- 간이 기능 점수법
 		- 프로젝트 초기 단계에서 각 기능의 요소를 모르는 경우에 평균 복잡도 가중치를 사용해 SW 기능의 크기를 측정
-		- <src img = https://imgur.com/iOTnJqc.png>
+		- <img src = https://imgur.com/iOTnJqc.png>
 		- 평균 복잡도 가중치
 			- 과거에 수행한 SW의 기능 점수 산정 결과를 분석해 5가지 유형에 적용된 복잡도를 계산한 가중치의 평균값
 			- 사업 초기에는 기능 점수를 산정할 수 있을 만큼 자료가 충분하지 않으므로 평균 복잡도 가중치에 의존해 기능 점수를 산정
@@ -200,10 +198,10 @@
 		- 애플리케이션 경계 : 기능 점수를 계산하는 대상을 제외한 다른 애플리케이션이나 외부 사용자를 구분한 경계
 		- 경계를 지을 때 주의할 점은 사용자 관점에서 구분해야함 <b>[ 개발자 관점에서 구분 X ]</b>
 		- 애플리케이션의 경계도 적당해야 함
-		- <src img = https://imgur.com/vKDT4ML.png>
+		- <img src = https://imgur.com/vKDT4ML.png height = 300>
 	- 데이터 기능 점수 계산
 		- ILF의 개수와 EIF의 개수를 계산해 각각의 평균 복잡도에 따라 데이터 기능 점수가 결정
-		- <src img = https://imgur.com/u49Mx2Z.png>
+		- <img src = https://imgur.com/u49Mx2Z.png>
 		- 내부 논리 파일
 			- 사용자가 CURD를 하기 위한 대상으로, DB에 존재하는 데이터 모임[정보]
 			- DB의 정보들은 기능 점수 측정 대상으로 애플리케이션 내부에서 파일로 유지
@@ -211,7 +209,7 @@
 			- 측정 대상 애플리케이션에서는 참조만 하고 다른 애플리케이션에서 유지되는 파일
 		- ILF : 이번 프로젝트에서 생성해 관리하는 데이터
 		- EIF : 이번 프로젝트에서 참조하는 데이터
-		- <src img = https://imgur.com/SYPTRCQ.png>
+		- <img src = https://imgur.com/SYPTRCQ.png>
 		- 데이터 기능 점수는 LIF의 개수와 EIF의 개수에 각각의 평균 복잡도[가중치]를 곱해 계산 [ ★★★ ]
 			- 점수 = {(ILF 개수 * 7.5) + (EIF 개수 * 5.4)}
 			- 7.5와 5.4는 각각 파일의 평균 복잡도
@@ -222,11 +220,11 @@
 		- EI : DB에 데이터를 등록하거나 수정, 삭제하는 것 [ 학생정보 등록, 수정, 삭제 ]
 		- EO : 계산하는 로직을 거쳐 데이터나 제어 정보를 사용자에게 보여주는 기능 [ 학생 학점 조회 ]
 		- EQ : 로직이 필요 없고 DB에 존재하는 데이터를 찾아 그래도 표시만 해주는 기능 [ 학생 주소 검색, 학생정보 조회 ]
-		- <src img = https://imgur.com/PnPouu8.png>
+		- <img src = https://imgur.com/PnPouu8.png>
 	- 미조정 기능 점수 계산 [ UFP ]
 		- 앞에서 구한 데이터 기능 점수와 트랜잭션 기능 점수를 합한 값
 		- 단순히 기능적인 요구사항에 대해서만 계산했지, 여러 가지 특성 대한 고려를 하지 않음
-		- <src img = https://imgur.com/2y9l3l2.png>
+		- <img src = https://imgur.com/2y9l3l2.png>
 	- 보정 전 개발 원가 계산
 		- 미조정 기능 점수에 기능 점수당 단가를 곱해 계산
 			- 보정 전 개발 원가 = 미조정 기능 점수 * 기능 점수당 단가
@@ -249,22 +247,22 @@
 			- 애플리케이션의 복잡도는 연계 복잡성 수준, 성능요구 수준, 운영 환경 호환성, 보안성 수준으로 나뉨
 			- 연계 복잡성 수준
 				- 연계 복잡성 수준은 연계 기관 수에 따른 보정 계수를 적용
-				- <src img = https://imgur.com/2g6zfrH.png>
+				- <img src = https://imgur.com/2g6zfrH.png>
 			- 성능요구 수준
 				- 개발하려는 SW에 대해 사용자가 빠른 응답시간 또는 높은 처리용을 요구한다면 SW의 복잡도는 높아짐
-				- <src img = https://imgur.com/hOpDZax.png>
+				- <img src = https://imgur.com/hOpDZax.png>
 			- 운영 환경 호환성
 				- 개발이 완료되어 설치할 때의 운영 환경[HW/SW]이 단순하지 않고 다음 표처럼 다양하다면 이를 보정 계수로 반영
-				<src img = https://imgur.com/xSYUPZb.png>
+				<img src = https://imgur.com/xSYUPZb.png>
 			- 보안성 수준
 				- 보안에 대한 요구가 많을수록 복잡도는 높아지고 이를 다음 표처럼 보정 계수로 반영
-				<src img = https://imgur.com/0bEqd7e.png>
+				<img src = https://imgur.com/0bEqd7e.png>
 	- 보정 후 개발 원가 계산
 		- 보정 후 개발 원가 = 보정 전 개발 원가 * ( 규모 보정 계수 * 연계 복잡성 수준 보정 계수 * 성능요구 수준 보정 계수 * 운영 환경 호환성 보정 계수 * 보안성 수준 보정 계수 )
 		- 5가지 보정 계수의 값을 구했다면 이 값을 적용해 보정한 후 개발 원가를 계산할 수 있음
 
-<src img = https://imgur.com/e1GLWhx.png>
-<src img = https://imgur.com/d0XCTHV.png>
+<img src = https://imgur.com/e1GLWhx.png height = 250>
+<img src = https://imgur.com/d0XCTHV.png height = 250>
 
 ---
 ### 3.8 일정 계획
