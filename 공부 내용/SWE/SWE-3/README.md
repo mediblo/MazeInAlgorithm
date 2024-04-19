@@ -356,8 +356,8 @@
   </tr>
 </table>
 
-<img src = https://imgur.com/XM9DFyW.png>
-<img src = https://imgur.com/8vkljg6.png>
+<img src = https://imgur.com/XM9DFyW.png width = 600>
+<img src = https://imgur.com/8vkljg6.png width = 600>
 
 - 일정 계획 기법 2 : 간트 차트를 이용한 일정표 작성
 	- 간트 차트
