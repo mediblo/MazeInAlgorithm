@@ -237,7 +237,7 @@
 			- 개설 학년은 1학년, 2학년, 3학년, 4학년 중 하나
 			- 개설 학기는 1학기, 2학기, 계절학기 중 하나
 	- 소단위명세서
-		- 소단위 명세서 예시<br><code>int DB, SE, DS, PL;<br>scanf(DB, SE, DS, PL)<br>print(합계 : DB + SE + DS + PL)<br>print((평균 : DB + SE + DS + PL)/4)<br>print(등급 : grade(DB), grade(SE), grade(DS), grade(PL))<br><br>grade(score) {<br>&nbsp;&nbsp;if (score >= 90) {return 'A'}<br>&nbsp;&nbsp;else if (score >= 80) {return 'B'}<br>&nbsp;&nbsp;else if (score >= 70) {return 'C'}<br>&nbsp;&nbsp;else if (score >= 60) {return 'D'}<br>&nbsp;&nbsp;else {return 'F'}<br>}</code>
+		- <img src = https://imgur.com/1styjoO.png height = 300>
 		- DFD에서 원으로 표시한 프로세스인 처리는 실제 알고리즘 형태로 작성한 것
 		- 작성 도구에는 구조적 언어, 선후 조건문, 의사 결정표 등이 있음
 		- 구조적 언어 : 제어 흐름에 대해 미리 정해진 키워드 사용하여 자료 처리 알고리즘을 기술[IF, WHILE, UNTIL, SELECT, DO, END]
