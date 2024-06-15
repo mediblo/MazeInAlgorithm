@@ -1,0 +1,27 @@
+@startuml
+package LSP {
+    class Lecturer_Before{
+        - lecturer : String
+        - charge : int
+
+        + Lecturer_Before()
+        + getSalary() : void
+    }
+
+    class LectureNight extends Lecturer_Before{
+        + LecturerNight()
+        + getSalary() : void
+    }
+
+    class LectureAtGS extends Lecturer_Before{
+        + LecturerAtGS()
+        + getSalary() : void
+    }
+
+    class LectureWithWork extends Lecturer_Before{
+        + LecturerWithWork()
+        + getSalary() : void
+    }
+}
+
+@enduml

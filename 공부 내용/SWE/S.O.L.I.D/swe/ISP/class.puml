@@ -1,0 +1,28 @@
+@startuml
+package ISP {
+    class Haksa implements Student, Professor, Employee{
+        + setClassesSetting()
+        + setGradeSetting()
+        + requestClasses()
+        + searchGrade()
+        + registrationGrade()
+        + searchName()
+    }
+
+    interface Student{
+        + requestClasses()
+        + searchGrade()
+    }
+
+    interface Professor{
+        + registrationGrade()
+        + searchName()
+    }
+
+    interface Employee{
+        + setClassesSetting()
+        + setGradeSetting()
+    }
+}
+
+@enduml

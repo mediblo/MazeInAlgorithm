@@ -1,0 +1,20 @@
+@startuml
+
+actor User
+participant "main : Lecturer_main" as Main
+participant "lect01 : LecturerAtGS" as LecturerAtGS
+participant "lect02 : LecturerNight" as LecturerNight
+participant "lect03 : LecturerWithWork" as LecturerWithWork
+participant "lect04 : LecturerNomal" as LecturerNomal
+
+User -> Main: main()
+Main -> LecturerAtGS: new
+LecturerAtGS -> LecturerAtGS: Lecturer()
+Main -> LecturerNight: new
+LecturerNight -> LecturerNight: Lecturer()
+Main -> LecturerWithWork: new
+LecturerWithWork -> LecturerWithWork: Lecturer()
+Main -> LecturerNomal: new
+LecturerNomal -> LecturerNomal: Lecturer()
+
+@enduml

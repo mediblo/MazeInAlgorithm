@@ -1,0 +1,16 @@
+@startuml
+actor User
+participant "main : ISPmain" as Main
+participant "hs : Bachelor" as Bachelor
+
+User -> Main: main()
+Main -> Bachelor: new
+
+Main -> Bachelor: registrationGrade()
+Main -> Bachelor: searchName()
+Main -> Bachelor: requestClasses()
+Main -> Bachelor: searchGrade()
+Main -> Bachelor: setClassesSetting()
+Main -> Bachelor: setGradeSetting()
+
+@enduml

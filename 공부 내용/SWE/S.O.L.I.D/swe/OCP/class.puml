@@ -1,0 +1,36 @@
+@startuml
+package OCP {
+    class MP4 extends PlayCodec {
+        + MP4()
+        + play(): void
+    }
+
+    class AVI extends PlayCodec {
+        + AVi()
+        + play(): void
+    }
+
+    class WMV extends PlayCodec {
+        + WMV()
+        + play(): void
+    }
+
+    class MP21 extends PlayCodec {
+        + MP21()
+        + play(): void
+    }
+
+    class PlayCodec {
+        + playCodec()
+        + play(): void
+    }
+
+    class Video_Player {
+        - pc : PlayCodec
+        + Video_player(playCodec);
+    }
+}
+
+Video_Player --> "0..1" PlayCodec : \~pc
+
+@enduml

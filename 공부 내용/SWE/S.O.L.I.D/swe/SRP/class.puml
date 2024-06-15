@@ -1,0 +1,15 @@
+@startuml
+package SRP {
+    class Sugang {
+        +sugangSincheong(): void
+        +siganpyoJohy(): void
+        +gaesolgwamokJohy(): void
+    }
+
+    class SungJuk {
+        +sungjukIpryup(): void
+        +sungjukHohy(): void
+        +nujukSungjukJohy(): void
+    }
+}
+@enduml
